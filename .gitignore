@@ -1,0 +1,8 @@
+# Local Netlify folder
+*/.netlify
+*/dist
+*/node_modules/
+*/awesome-api
+*/*.zip
+*/awesome.tar
+*/public
