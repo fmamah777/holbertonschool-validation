@@ -83,4 +83,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: awesome-website.zip
-          body_path: module4_task1/DEPLOY.md
+          body_path: module4_task3/DEPLOY.md
