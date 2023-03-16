@@ -9,5 +9,5 @@ dockerImageTag=$(cat awesome_image_tag_name.txt)
 docker context create production --docker "host=ssh://ubuntu@$new_ec2_instance_public_ip"
 docker context use production
 
-docker pull tsuroo/awesome-web:"$dockerImageTag"
+docker pull echo/awesome-web:"$dockerImageTag"
 docker compose up --detach awesome-web

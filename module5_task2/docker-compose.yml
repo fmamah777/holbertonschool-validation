@@ -8,9 +8,8 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    image: tsuroo/awesome-web:${CURRENT_GIT_REF:-main}
+    image: echo/awesome-web:${CURRENT_GIT_REF:-main}
     ports:
       - 80:9999
       - 443:9999
     restart: always
-    
