@@ -1,0 +1,15 @@
+services:
+  awesome-build:
+    build:
+      context: .
+      dockerfile: ./build/Dockerfile
+    image: awesome:build
+  awesome-web:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: tsuroo/awesome-web:${CURRENT_GIT_REF:-main}
+    ports:
+      - 80:9999
+      - 443:9999
+    restart: always
