@@ -1,4 +1,4 @@
-name: module5_task4
+sshname: module5_task4
 on:
   push:
     tags: [ "1.0.*" ]
