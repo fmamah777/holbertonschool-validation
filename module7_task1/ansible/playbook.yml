@@ -1,0 +1,11 @@
+hosts: production jenkins
+  -name: update apt cache, upgrade, and install packages
+   shell:
+      sudo apt-get update
+      sudo apt-get upgrade
+      sudo apt-get install -y docker.io make
+  -name: Docker setup
+   shell: |
+      sudo systemctl start docker
+      sudo systemctl enable docker
+      sudo usermod -aG docker ubuntu
