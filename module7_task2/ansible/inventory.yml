@@ -1,10 +1,10 @@
 all:
-hosts:
-  jenkins:
-    ansible_host: 3.139.86.987
-    ansible_user: ubuntu
-    ansible_ssh_common_args: '-o StrictHostKeyChecing=no'
-  production:
-    ansible_host: 3.145.12.345
-    ansible_user: ubuntu
-    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+  hosts:
+    jenkins:
+      ansible_host: 18.117.91.32
+      ansible_user: ubuntu
+      ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+    production:
+      ansible_host: 18.223.43.229
+      ansible_user: ubuntu
+      ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
