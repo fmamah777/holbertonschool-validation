@@ -1,4 +1,4 @@
-module github.com/TypicalFooBar/awesome-api
+module github.com/fmamah777/awesome-api
 
 go 1.20
 
